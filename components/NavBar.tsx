@@ -16,8 +16,8 @@ function NavBar() {
         </Link>
         <div className="flex items-center gap-3 justify-center">
        <CustomLink href="https://www.linkedin.com/in/asrat-adane-50a521240/" SocialIcon={<LinkedInLogoIcon className="w-6 h-6 "/>}/>
-       <CustomLink href="/" SocialIcon={<GitHubLogoIcon className="w-6 h-6 "/>}/>
-       <CustomLink href="/" SocialIcon={<InstagramLogoIcon className="w-6 h-6 "/>}/>
+       <CustomLink href="https://github.com/Asrat001/" SocialIcon={<GitHubLogoIcon className="w-6 h-6 "/>}/>
+       <CustomLink href="https://www.instagram.com/assrat_m/" SocialIcon={<InstagramLogoIcon className="w-6 h-6 "/>}/>
         <DarkModeButton/>
         </div>
 
