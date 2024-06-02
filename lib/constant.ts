@@ -1,3 +1,5 @@
+import { Service } from "./type";
+
 export const rings = [
 	{
 		ring: "ring-green-500",
@@ -22,18 +24,27 @@ export const rings = [
 	},
 ];
 
-export const service=[
+export const service:Service[]=[
     {
-        name:"Website Developement"
+        name:"Website Developement",
+        discription:"Responsive Website ",
+        framework:'React,Nextjs'
+
     },
     {
-        name:"Mobile Application Developement"
+        name:"Mobile Application Development",
+        discription:"Responsive Website ",
+        framework:'java,ReactNative,Flutter'
     },
     {
-        name:"Back-End Developement"
+        name:"Back-End Development",
+        discription:"Responsive Website ",
+        framework:'Nodejs,FastApi'
     },
     {
-        name:"Graphics Design"
+        name:"Deployment",
+        discription:"CI/CD Tools and Deployment ",
+        framework:'Vercel,Netlify,AWs,GitA'
     },
     
 ]
