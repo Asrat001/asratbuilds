@@ -1,25 +1,31 @@
 import {
     Card,
-    CardContent,
     CardDescription,
     CardFooter,
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
+  import { Service } from "@/lib/type"
+  import { Badge } from "@/components/ui/badge"
 
-function ServiceCard() {
+function ServiceCard({Service}:{Service:Service}) {
   return (
     <div>
-    <Card>
+    <Card className=" ">
   <CardHeader>
-    <CardTitle>Card Title</CardTitle>
-    <CardDescription>Card Description</CardDescription>
+    <CardTitle className="text-center text-balance">{Service.name}</CardTitle>
+    <CardDescription className=" text-balance text-center">{Service.discription}</CardDescription>
   </CardHeader>
-  <CardContent>
-    <p>Card Content</p>
-  </CardContent>
-  <CardFooter>
-    <p>Card Footer</p>
+  <CardFooter className=" place-content-center ">
+    {Service.framework.split(",").map((val,indec)=>{
+        return(
+            <Badge className=" w-fit ml-1  bg-black  text-white   border-[2px]  border-dashed border-gray-300 ">
+                <p className="text-[13px] font-extrabold">
+                {val}
+                </p>
+            </Badge>
+        )
+    })}
   </CardFooter>
 </Card>
 
