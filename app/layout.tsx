@@ -19,13 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en" >
     
-      <body className={inter.className}>
+      <body className={`${inter.className}`}>
       <ThemeProvider
       attribute="class"
       defaultTheme="dark"
       enableSystem
       disableTransitionOnChange
-      >	<main className="flex flex-col max-w-7xl mx-auto min-h-screen space-y-10 p-5">
+      >	<main className="flex flex-col max-w-7xl mx-auto min-h-screen space-y-10 p-5 ">
       <NavBar/>
       <div className="w-full flex-1 ">{children}</div>
       
